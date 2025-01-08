@@ -1,0 +1,40 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JobController;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+Route::resource('jobs', JobController::class);
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+// Route::get("/jobs", function() {
+//     return view("jobs");
+// });
+
+// Route::get("/contact", function() {
+//     return view("contact");
+// });
+
+
+// Route::get( "/test", function() {
+//     return view("test");
+// });
+// Route::get( "/farhad", function() {
+//     return view("farhad");
+// });
+// Route::get( "/add", function() {
+//     return view("/add_job");
+// });

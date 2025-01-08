@@ -97,13 +97,13 @@
          <section class="dark:bg-dark bg-white py-[30px]">
         <div class="mx-auto px-4 sm:container">
             <div
-                class="border-stroke dark:border-dark-3 items-center justify-between border-b md:flex"
+                class="border-stroke items-center justify-between border-b md:flex"
                 >
                 <div class="mb-6 w-full">
-                    <h2 class="text-dark mb-2 text-2xl font-semibold dark:text-white">
+                    <h2 class="text-dark mb-2 text-2xl font-semibold">
                     Your Favorite Items
                     </h2>
-                    <p class="text-body-color dark:text-dark-6 text-sm font-medium">
+                    <p class="text-body-color text-sm font-medium">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
                     ultrices lectus sem.
                     </p>
@@ -116,7 +116,7 @@
         <!-- header text end -->
     <main>
         <!-- card start -->
-        <div class=" w-full flex  bg-white dark:bg-gray-800 mb-8 rounded overflow-hidden">
+        <div class=" w-full flex  bg-white mb-8 rounded overflow-hidden">
             <div class="relative overflow-hidden lg:w-1/3">
                 <a href="#">
                 <div class="inset-0 hover:bg-white opacity-0 transition duration-700 hover:opacity-10"></div>
@@ -125,7 +125,7 @@
             </div>
             <div class="p-6 lg:w-2/3">
                 <div class="mb-2">
-                    <h3 class="text-lg lg:text-2xl leading-normal mb-4 font-semibold text-gray-800 dark:text-gray-300"><a href="#" class="hover:text-indigo-700">New web design layout trends in 2021</a></h3>
+                    <h3 class="text-lg lg:text-2xl leading-normal mb-4 font-semibold text-gray-800"><a href="#" class="hover:text-indigo-700">New web design layout trends in 2021</a></h3>
                     <div class="text-gray-500">
                         <svg class="bi bi-calendar me-2 inline-block" width=".8rem" height=".8rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M14 0H2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" clip-rule="evenodd"></path>
@@ -138,7 +138,7 @@
         </div>
         <!-- end card -->
         <!-- card start -->
-        <div class=" w-full flex  bg-white dark:bg-gray-800 mb-8 rounded overflow-hidden">
+        <div class=" w-full flex  bg-white mb-8 rounded overflow-hidden">
             <div class="relative overflow-hidden  lg:w-1/3">
                 <a href="#">
                 <div class="inset-0 hover:bg-white opacity-0 transition duration-700 hover:opacity-10"></div>
@@ -147,7 +147,7 @@
             </div>
             <div class="p-6 lg:w-2/3">
                 <div class="mb-2">
-                    <h3 class="text-lg lg:text-2xl leading-normal mb-4 font-semibold text-gray-800 dark:text-gray-300"><a href="#" class="hover:text-indigo-700">New web design layout trends in 2021</a></h3>
+                    <h3 class="text-lg lg:text-2xl leading-normal mb-4 font-semibold text-gray-800"><a href="#" class="hover:text-indigo-700">New web design layout trends in 2021</a></h3>
                     <div class="text-gray-500">
                         <svg class="bi bi-calendar me-2 inline-block" width=".8rem" height=".8rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M14 0H2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" clip-rule="evenodd"></path>
@@ -160,7 +160,7 @@
         </div>
         <!-- end card -->
         <!-- card start -->
-        <div class=" w-full flex  bg-white dark:bg-gray-800 mb-8 rounded overflow-hidden">
+        <div class=" w-full flex  bg-white mb-8 rounded overflow-hidden">
             <div class="relative overflow-hidden  lg:w-1/3">
                 <a href="#">
                 <div class="inset-0 hover:bg-white opacity-0 transition duration-700 hover:opacity-10"></div>
@@ -169,7 +169,7 @@
             </div>
             <div class="p-6 lg:w-2/3">
                 <div class="mb-2">
-                    <h3 class="text-lg lg:text-2xl leading-normal mb-4 font-semibold text-gray-800 dark:text-gray-300"><a href="#" class="hover:text-indigo-700">New web design layout trends in 2021</a></h3>
+                    <h3 class="text-lg lg:text-2xl leading-normal mb-4 font-semibold text-gray-800"><a href="#" class="hover:text-indigo-700">New web design layout trends in 2021</a></h3>
                     <div class="text-gray-500">
                         <svg class="bi bi-calendar me-2 inline-block" width=".8rem" height=".8rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M14 0H2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" clip-rule="evenodd"></path>
@@ -181,6 +181,32 @@
             </div>
         </div>
         <!-- end card -->
+        @foreach ($jobs as $job )
+            <div class=" w-full flex  bg-white mb-8 rounded overflow-hidden">
+                <div class="relative overflow-hidden  lg:w-1/3">
+                    <a href="#">
+                        <div class="inset-0 hover:bg-white opacity-0 transition duration-700 hover:opacity-10"></div>
+                        @if($job->image)
+                            <img src="{{ asset('storage/' . $job->image) }}" alt="{{ $job->title }}">
+                        @else
+                            <img class="max-w-full h-auto" src="https://plus.unsplash.com/premium_photo-1661378625549-2e0971811d09?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="alt title">
+                        @endif
+                    </a>
+                </div>
+                <div class="p-6 lg:w-2/3">
+                    <div class="mb-2 pr-8">
+                        <h3 class="text-lg lg:text-2xl leading-normal mb-4 font-semibold text-gray-800"><a href="#" class="hover:text-indigo-700">{{ $job->title }}</a></h3>
+                        <div class="text-gray-500">
+                            <svg class="bi bi-calendar me-2 inline-block" width=".8rem" height=".8rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M14 0H2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" clip-rule="evenodd"></path>
+                                <path fill-rule="evenodd" d="M6.5 7a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm-9 3a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm-9 3a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+                        </svg><span>{{ \Carbon\Carbon::parse($job->created_at)->diffForHumans() }}</span>
+                    </div>
+                </div>
+                    <p>{{$job->short_description}}</p>
+                </div>
+            </div>
+        @endforeach
     </main>
     
 </x-layout>

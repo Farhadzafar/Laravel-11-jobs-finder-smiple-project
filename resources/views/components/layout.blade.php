@@ -43,7 +43,7 @@
 
 
                 <!-- add jobs button start -->
-                  <a href="/add" class="hidden md:block mr-4">
+                  <a href="/jobs/create" class="hidden md:block mr-4">
                     <button
                     class="bg-stone-50 inline-flex items-center justify-center whitespace-nowrap rounded py-[10px] px-5 text-sm font-medium text-stone-800 hover:bg-opacity-90"
                     >
