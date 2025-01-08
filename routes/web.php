@@ -17,8 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("/about", function() {
-    return view("about");
+Route::get("/jobs", function() {
+    return view("jobs");
 });
 
 Route::get("/contact", function() {
@@ -31,4 +31,7 @@ Route::get( "/test", function() {
 });
 Route::get( "/farhad", function() {
     return view("farhad");
+});
+Route::get( "/add", function() {
+    return view("/add_job");
 });

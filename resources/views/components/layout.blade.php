@@ -7,8 +7,16 @@
         <script src="https://cdn.tailwindcss.com"></script>
         
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- Styles -->
+        <style>
+            body {
+                font-family: 'Roboto', 'Open Sans', sans-serif;
+            }
+        </style>
 
        
     </head>
@@ -25,13 +33,55 @@
                   <div class="ml-10 flex items-baseline space-x-4">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                     <a href="/" class=" {{request()->is(  '/') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'}} rounded-md px-3 py-2 text-sm font-medium " aria-current="page">Home</a>
-                    <a href="/about" class=" {{request()->is('about') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'}} rounded-md px-3 py-2 text-sm font-medium">About</a>
+                    <a href="/jobs" class=" {{request()->is('jobs') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'}} rounded-md px-3 py-2 text-sm font-medium">Jobs</a>
                     <a href="/contact" class=" {{request()->is('contact') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'}}  rounded-md px-3 py-2 text-sm font-medium">Contact</a>
                   </div>
                 </div>
               </div>
               <div class="hidden md:block">
                 <div class="ml-4 flex items-center md:ml-6">
+
+
+                <!-- add jobs button start -->
+                  <a href="/add" class="hidden md:block mr-4">
+                    <button
+                    class="bg-stone-50 inline-flex items-center justify-center whitespace-nowrap rounded py-[10px] px-5 text-sm font-medium text-stone-800 hover:bg-opacity-90"
+                    >
+                    Add New Item
+                    <span class="pl-2">
+                        <svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 18 18"
+                            fill="#000000"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M8.99961 2.39961C5.35453 2.39961 2.39961 5.35453 2.39961 8.99961C2.39961 12.6447 5.35453 15.5996 8.99961 15.5996C12.6447 15.5996 15.5996 12.6447 15.5996 8.99961C15.5996 5.35453 12.6447 2.39961 8.99961 2.39961ZM0.599609 8.99961C0.599609 4.36042 4.36042 0.599609 8.99961 0.599609C13.6388 0.599609 17.3996 4.36042 17.3996 8.99961C17.3996 13.6388 13.6388 17.3996 8.99961 17.3996C4.36042 17.3996 0.599609 13.6388 0.599609 8.99961Z"
+                                fill="#000000"
+                                />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M8.99961 5.09961C9.49667 5.09961 9.89961 5.50255 9.89961 5.99961V11.9996C9.89961 12.4967 9.49667 12.8996 8.99961 12.8996C8.50255 12.8996 8.09961 12.4967 8.09961 11.9996V5.99961C8.09961 5.50255 8.50255 5.09961 8.99961 5.09961Z"
+                                fill="#000000"
+                                />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M5.09961 8.99961C5.09961 8.50255 5.50255 8.09961 5.99961 8.09961H11.9996C12.4967 8.09961 12.8996 8.50255 12.8996 8.99961C12.8996 9.49667 12.4967 9.89961 11.9996 9.89961H5.99961C5.50255 9.89961 5.09961 9.49667 5.09961 8.99961Z"
+                                fill="#000000"
+                                />
+                        </svg>
+                    </span>
+                    </button>
+                </a>
+
+                <!-- add jobs button end -->
+
+
                   <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                     <span class="absolute -inset-1.5"></span>
                     <span class="sr-only">View notifications</span>
@@ -76,7 +126,7 @@
             <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <a href="/" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
-              <a href="/about" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+              <a href="/jobs" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Jobs</a>
               <a href="/contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
             </div>
             <div class="border-t border-gray-700 pb-3 pt-4">
@@ -99,14 +149,8 @@
             </div>
           </div>
         </nav>
-
-        <header class="bg-white shadow">
-          <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold tracking-tight text-gray-900">{{ $heading }}</h1>
-          </div>
-        </header>
-        <main>
-          <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <main class="h-full w-full pt-4">
+          <div class="w-full h-full px-4 py-6 sm:px-6 lg:px-8">
             {{ $slot }}
           </div>
         </main>
